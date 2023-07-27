@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Larning Tailwindcss</title>
+       <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.0/dist/full.css" rel="stylesheet" type="text/css" />
+       <script src="https://cdn.tailwindcss.com"></script>
+
+
+</head>
+<body>
+    <header>
+        <nav>
+            
+            <div class="navbar bg-red-400 rounded-full">
+                <div class="navbar-start">
+                  <ul class="menu menu-horizontal px-1 text-white mr-1.5">
+                    <li><a>Home</a></li>
+                    <li><a>About Us</a></li>
+                    <li><a>Shop</a></li>
+                    <li><a>All Fruits</a></li>
+                  </ul>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <img class="h-14 w-14 mr-1.5" src="Picter/logo.png" alt="">
+                  <h2 class="text-4xl text-white">Fruit Burst</h2>
+                </div>
+                <div class="navbar-end">
+                    <input type="text" placeholder="Search....." class="input input-bordered w-80 h-11 rounded-full" />
+                </div>
+              </div>
+
+        </nav>
+
+    </header>
+    <main>
+        <div class="carousel w-auto mt-6">
+            <div id="slide1" class="carousel-item relative w-full">
+              <!-- <img src="Picter/banner1.png" class="w-4/5" /> -->
+              <div class="hero min-h-screen" style="background-image: url('Picter/banner1.png')">
+                <div class="hero-overlay bg-opacity-60"></div>
+                <div class="hero-content text-center text-neutral-content">
+                  <div class="max-w-lg">
+                    <h1 class="mb-5 text-5xl font-bold">Exotic tastes at your <br> doorstep</h1>
+                    <p class="mb-5">We supply highly quality organic products</p>
+                    <button class="btn btn-primary bg-red-500">Shop Now</button>
+                  </div>
+                </div>
+              </div>
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide4" class="btn btn-circle">❮</a> 
+                <a href="#slide2" class="btn btn-circle">❯</a>
+              </div>
+            </div> 
+            <div id="slide2" class="carousel-item relative w-full">
+                <div class="hero min-h-screen" style="background-image: url('Picter/banner2.png')">
+                    <div class="hero-overlay bg-opacity-60"></div>
+                    <div class="hero-content text-center text-neutral-content">
+                      <div class="max-w-lg">
+                        <h1 class="mb-5 text-5xl font-bold">Exotic tastes at your <br> doorstep</h1>
+                        <p class="mb-5">We supply highly quality organic products</p>
+                        <button class="btn btn-primary bg-red-500">Shop Now</button>
+                      </div>
+                    </div>
+                  </div>
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide1" class="btn btn-circle">❮</a> 
+                <a href="#slide3" class="btn btn-circle">❯</a>
+              </div>
+            </div> 
+            <div id="slide3" class="carousel-item relative w-full">
+                <div class="hero min-h-screen" style="background-image: url('Picter/banner3.png')">
+                    <div class="hero-overlay bg-opacity-60"></div>
+                    <div class="hero-content text-center text-neutral-content">
+                      <div class="max-w-lg">
+                        <h1 class="mb-5 text-5xl font-bold">Exotic tastes at your <br> doorstep</h1>
+                        <p class="mb-5">We supply highly quality organic products</p>
+                        <button class="btn btn-primary bg-red-500">Shop Now</button>
+                      </div>
+                    </div>
+                  </div>
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide2" class="btn btn-circle">❮</a> 
+                <a href="#slide4" class="btn btn-circle">❯</a>
+              </div>
+            </div> 
+            <div id="slide4" class="carousel-item relative w-full">
+                <div class="hero min-h-screen" style="background-image: url('Picter/banner4.png')">
+                    <div class="hero-overlay bg-opacity-60"></div>
+                    <div class="hero-content text-center text-neutral-content">
+                      <div class="max-w-lg">
+                        <h1 class="mb-5 text-5xl font-bold">Exotic tastes at your <br> doorstep</h1>
+                        <p class="mb-5">We supply highly quality organic products</p>
+                        <button class="btn btn-primary bg-red-500">Shop Now</button>
+                      </div>
+                    </div>
+                  </div>
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide3" class="btn btn-circle">❮</a> 
+                <a href="#slide1" class="btn btn-circle">❯</a>
+              </div>
+            </div>
+          </div>
+
+    </main>
+    <nav>
+
+    </nav>
+
+<!-- card top deine  -->
+
+<div class="flex justify-between my-8">
+  <div>
+    <h2 class="text-5xl font-bold">Deal of the day</h2>
+    <p class="text-base my-5">Contrary to popular belief, is not simply random text. It has roots in a piece of classical <br> Latin literature from 45 BC, making it over 2000 years old.</p>
+  </div>
+  <div>
+
+    <div class="grid grid-flow-col gap-5 text-center auto-cols-max">
+      <div class="flex flex-col p-2 bg-whit text-black rounded-box text-neutral-content">
+        <span class="countdown font-mono text-5xl">
+          <span style="--value:15;"></span>
+        </span>
+        days
+      </div> 
+      <div class="flex flex-col p-2 bg-whit text-black rounded-box text-neutral-content">
+        <span class="countdown font-mono text-5xl">
+          <span style="--value:10;"></span>
+        </span>
+        hours
+      </div> 
+      <div class="flex flex-col p-2 bg-whit text-black rounded-box text-neutral-content">
+        <span class="countdown font-mono text-5xl">
+          <span style="--value:24;"></span>
+        </span>
+        min
+      </div> 
+      <div class="flex flex-col p-2 bg-whit text-black rounded-box text-neutral-content">
+        <span class="countdown font-mono text-5xl">
+          <span style="--value:5;"></span>
+        </span>
+        sec
+      </div>
+    </div>
+
+  </div>
+</div>
+    <!-- card desine -->
+    <div class="grid grid-cols-4">
+    <div class="card bg-slate-200 w-80 shadow-xl">
+  <figure class="px-10 pt-10">
+    <img src="Picter/fruit6.png" alt="Shoes" class="rounded-xl" />
+  </figure>
+  <div class="card-body items-center text-center">
+    <h2 class="card-title">12.90$ - 18.85$</h2>
+    <p>Apples</p>
+    <div class="rating">
+  <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-500" />
+  <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-500" checked />
+  <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-500" />
+  <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-500" />
+  <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-500" />
+</div>
+   <p class="text-red-500">Details</p>
+  </div>
+</div>
+
+<div class="card bg-slate-200 w-80 shadow-xl">
+  <figure class="px-10 pt-10">
+    <img src="Picter/fruit7.png" alt="Shoes" class="rounded-xl" />
+  </figure>
+  <div class="card-body items-center text-center">
+    <h2 class="card-title">12.90$ - 18.85$</h2>
+    <p>Apples</p>
+    <div class="rating">
+  <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-500" />
+  <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-500" checked />
+  <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-500" />
+  <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-500" />
+  <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-500" />
+</div>
+   <p class="text-red-500">Details</p>
+  </div>
+</div>
+
+<div class="card w-80 bg-slate-200 shadow-xl">
+  <figure class="px-10 pt-10">
+    <img src="Picter/fruit8.png" alt="Shoes" class="rounded-xl" />
+  </figure>
+  <div class="card-body items-center text-center">
+    <h2 class="card-title">12.90$ - 18.85$</h2>
+    <p>Apples</p>
+    <div class="rating">
+  <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-500" />
+  <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-500" checked />
+  <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-500" />
+  <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-500" />
+  <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-500" />
+</div>
+   <p class="text-red-500">Details</p>
+  </div>
+</div>
+
+<div class="card w-80 bg-slate-200 shadow-xl">
+  <figure class="px-10 pt-10">
+    <img src="Picter/fruit9.png" alt="Shoes" class="rounded-xl" />
+  </figure>
+  <div class="card-body items-center text-center">
+    <h2 class="card-title">12.90$ - 18.85$</h2>
+    <p>Apples</p>
+    <div class="rating">
+  <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-500" />
+  <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-500" checked />
+  <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-500" />
+  <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-500" />
+  <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-500" />
+</div>
+   <p class="text-red-500">Details</p>
+  </div>
+</div>
+</div>
+<div class="text-center my-8">
+<button class="btn btn-primary bg-red-500 ">Shop All</button>
+</div>
+
+<!-- card img style  -->
+<div class="pt-6">
+<div class="hero h-screen w-full" style="background-image: url('Picter/banner1.png')">
+  <div class="hero-overlay bg-opacity-60">
+    <div class="py-11">
+  <h1 class="text-5xl text-white text-center">Meet the team section</h1>
+  <p class="text-white text-center py-9">Contrary to popular belief, is not simply random text. It has roots in a piece of classical <br> Latin literature from 45 BC, making it over 2000 years old.</p>
+<div class="grid grid-cols-4 py-9">
+  <div class="card w-96 text-white">
+    <figure class="px-10 pt-10">
+      <img src="Picter/member1.png" alt="Shoes" class="rounded-xl" />
+    </figure>
+    <div class="card-body items-center text-center">
+      <h2 class="card-title">Shoes!</h2>
+      <p>If a dog chews shoes whose shoes does he choose?</p>
+      <div class="card-actions">
+        <!-- icn  -->
+        <svg xmlns="http://www.w3.org/2000/svg"class="bg-red-400 text-white rounded-3xl" height="2em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"/></svg>
+
+        <svg xmlns="http://www.w3.org/2000/svg"class="bg-red-400 text-white rounded-3xl" height="2em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg"class="bg-red-400 text-white rounded-3xl" height="2em" viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"/></svg>
+        <!-- icn  -->
+      </div>
+    </div>
+  </div>
+
+  <div class="card w-80 text-white">
+    <figure class="px-10 pt-10">
+      <img src="Picter/member2.png" alt="Shoes" class="rounded-xl" />
+    </figure>
+    <div class="card-body items-center text-center">
+      <h2 class="card-title">Shoes!</h2>
+      <p>If a dog chews shoes whose shoes does he choose?</p>
+      <div class="card-actions">
+        <svg xmlns="http://www.w3.org/2000/svg"class="bg-red-400 text-white rounded-3xl" height="2em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"/></svg>
+
+        <svg xmlns="http://www.w3.org/2000/svg"class="bg-red-400 text-white rounded-3xl" height="2em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg"class="bg-red-400 text-white rounded-3xl" height="2em" viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"/></svg>
+      </div>
+    </div>
+  </div>
+
+  <div class="card w-80 text-white">
+    <figure class="px-10 pt-10">
+      <img src="Picter/member3.png" alt="Shoes" class="rounded-xl" />
+    </figure>
+    <div class="card-body items-center text-center">
+      <h2 class="card-title">Shoes!</h2>
+      <p>If a dog chews shoes whose shoes does he choose?</p>
+      <div class="card-actions">
+        <svg xmlns="http://www.w3.org/2000/svg"class="bg-red-400 text-white rounded-3xl" height="2em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"/></svg>
+
+        <svg xmlns="http://www.w3.org/2000/svg"class="bg-red-400 text-white rounded-3xl" height="2em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg"class="bg-red-400 text-white rounded-3xl" height="2em" viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"/></svg>
+      </div>
+    </div>
+  </div>
+
+  <div class="card w-80 text-white">
+    <figure class="px-10 pt-10">
+      <img src="Picter/member4.png" alt="Shoes" class="rounded-xl" />
+    </figure>
+    <div class="card-body items-center text-center">
+      <h2 class="card-title">Shoes!</h2>
+      <p>If a dog chews shoes whose shoes does he choose?</p>
+      <div class="card-actions">
+        <svg xmlns="http://www.w3.org/2000/svg"class="bg-red-400 text-white rounded-3xl" height="2em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"/></svg>
+
+        <svg xmlns="http://www.w3.org/2000/svg"class="bg-red-400 text-white rounded-3xl" height="2em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg"class="bg-red-400 text-white rounded-3xl" height="2em" viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"/></svg>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+  </div>
+</div>
+</div>
+<!-- last vanar section  -->
+
+  <h1 class="text-5xl text-center my-9 font-bold">Why Choose Us</h1>
+  <p class="text-center my-9">Contrary to popular belief, is not simply random text. It has roots in a piece of classical <br>
+    Latin literature from 45 BC, making it over 2000 years old</p>
+    <div class="flex justify-between my-9">
+      <div>
+      <h3 class="text-2xl font-bold">Dedicated Team</h3>
+      <p class="my-5">Professional employees are there for you to pick <br> the most amazing and fresh fruits.</p>
+
+      <h3 class="text-2xl font-bold">Fresh is Best</h3>
+      <p class="my-5">Professional employees are there for you to pick <br> the most amazing and fresh fruits.</p>
+      <h3 class="text-2xl font-bold">Gift Certificates</h3>
+      <p class="my-5">Professional employees are there for you to pick <br> the most amazing and fresh fruits.</p>
+    </div>
+    <img src="Picter/whychoose1.png" alt="">
+    <div>
+      <h3 class="text-2xl font-bold">Integrated Supplier</h3>
+      <p class="my-5">Professional employees are there for you to pick <br> the most amazing and fresh fruits.</p>
+
+      <h3 class="text-2xl font-bold">Sustainable Practice</h3>
+      <p class="my-5">Professional employees are there for you to pick <br> the most amazing and fresh fruits.</p>
+      <h3 class="text-2xl font-bold">The Benefits Only</h3>
+      <p class="my-5">Professional employees are there for you to pick <br> the most amazing and fresh fruits.</p>
+    </div>
+</div>
+
+<footer>
+
+  <footer class="footer footer-center p-10 bg-slate-950 text-white text-base-content rounded">
+    <div class="flex">
+    <img src="Picter/logo.png" alt="">
+    <h2 class="text-2xl font-bold">Fruit Burst</h2>
+  </div>
+    <div>
+      <div class="grid grid-flow-col gap-4">
+        <a class="link link-hover">About us</a> 
+        <a class="link link-hover">Contact</a> 
+        <a class="link link-hover">Jobs</a> 
+        <a class="link link-hover">All Fruits</a>
+        <a class="link link-hover">Support</a>
+        <a class="link link-hover">My Account</a>
+      </div>
+      
+    </div> 
+    <div>
+      <!-- i cons  -->
+      <div class="grid grid-flow-col gap-4">
+        <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"></path></svg></a> 
+        <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"></path></svg></a> 
+        <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"></path></svg></a>
+        <a><svg xmlns="http://www.w3.org/2000/svg" height="24" width="24" viewBox="0 0 384 512" class="fill-current"><path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"/></svg></a>
+        
+      </div>
+
+
+      <!-- i cons  -->
+      
+
+
+    </div>
+  </footer>
+
+</footer>
+
+
+    
+</body>
+</html>
